@@ -1,0 +1,148 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:ital,wght@0,300;0,500;0,900;1,400&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+         :root {
+            --main_color: #71B214;
+            --sec_color: #000000;
+        }
+        
+        .nav_bar .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: var(--sec_color);
+        }
+        
+        .nav_bar .logo span {
+            color: var(--main_color);
+        }
+        
+        .nav_bar ul li {
+            padding: 0px 10px;
+        }
+        
+        .nav_bar ul li a {
+            font-size: 20px;
+        }
+        
+        .nav_bar .navbar-light .navbar-nav .nav-link.active {
+            color: var(--main_color);
+        }
+        
+        .nav_bar button {
+            background-color: var(--main_color);
+            border-radius: 14px;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            padding: 12px 25px;
+            box-shadow: 0px 11px 24px 0px rgba(136, 211, 41, 41%);
+        }
+        
+        .nav_bar button:hover {
+            color: #fff;
+        }
+        
+        .contact_banner h6 {
+            font-size: 20px;
+            color: var(--main_color);
+            position: relative;
+        }
+        
+        .contact_banner h6::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 25px;
+            width: 30px;
+            background-image: url(../image/image1.png);
+            top: 0;
+            left: 180px;
+        }
+        
+        .contact_banner h1 {
+            font-size: 50px;
+            font-weight: bold;
+            padding-right: 120px;
+        }
+        
+        .contact_banner h1 span {
+            color: var(--main_color);
+        }
+        
+        .contact_banner p {
+            font-size: 16px;
+            color: #606060;
+            padding: 10px 200px 10px 0px;
+        }
+        
+        .contact_banner .btn_banner1 {
+            background-color: var(--main_color);
+            border-radius: 14px;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            padding: 12px 25px;
+            border: 1px solid var(--main_color);
+            box-shadow: 0px 11px 24px 0px rgba(136, 211, 41, 41%);
+        }
+        
+        .contact_banner .btn_banner2 {
+            background-color: #fff;
+            border-radius: 14px;
+            color: #000;
+            border: none;
+            font-size: 18px;
+            padding: 12px 25px;
+            border: 1px solid #000;
+        }
+        
+        @media screen and (min-device-width: 0px) and (max-device-width: 992px) {
+            .contact_banner h6 {
+                text-align: center;
+            }
+            .contact_banner h1 {
+                font-size: 40px;
+                font-weight: bold;
+                padding-right: 0px;
+                text-align: center;
+            }
+            .contact_banner h6::after {
+                display: none;
+            }
+            .contact_banner p {
+                padding: 0px;
+                text-align: center;
+            }
+            .btn_group {
+                display: flex !important;
+                justify-content: center;
+            }
+        }
+        /* @media screen and (min-width:0px) {
+        .nav_bar .logo {
+            font-size: 22px;
+        }
+        .contact_banner h6 {
+            text-align: center;
+            font-size: 16px;
+        }
+        .contact_banner h1 {
+            font-size: 22px;
+            font-weight: bold;
+            padding-right: 0px;
+            text-align: center;
+        }
+        .contact_banner h6::after {
+            display: none;
+        }
+        .contact_banner p {
+            padding: 0px;
+            font-size: 14px;
+            text-align: center;
+        }
+    } */
